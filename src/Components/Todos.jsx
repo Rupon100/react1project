@@ -15,7 +15,7 @@ export default function Todos(){
 
     return(
         <div>
-            <p>from todos: {todos.filter(todo => todo.completed).length}</p>
+            <h3>Todos Length: {todos.filter(todo => todo.completed).length}</h3>
             {
                 todos.map(todo => (
                     todo.completed && <Todo todo={todo}></Todo>
