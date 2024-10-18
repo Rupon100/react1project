@@ -6,7 +6,10 @@ export default function Input(){
     return(
         <div>
             <h2>From input</h2>
-            <input type="text" placeholder="Enter any name" value={name}
+            <input 
+             type="text" 
+             placeholder="Enter any name" 
+             value={name}
              onChange={e => setName(e.target.value)}
              />
             <p>Your Name: {name}</p> 
